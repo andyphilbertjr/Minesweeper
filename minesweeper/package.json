@@ -1,0 +1,18 @@
+{
+  "name": "minesweeper",
+  "version": "",
+  "description": "Board Game",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel -src -d lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.0.0"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "cli": "^1.0.1"
+  }
+}
