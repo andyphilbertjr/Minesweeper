@@ -33,8 +33,8 @@ export class Board{
         const numberOfColumns = this._bombBoard[0].length
         let numberOfBombs = 0
         neighborOffsets.forEach( offset => {
-            const neighborRowIndex = rowIndex + offset[0];
-            const neighborColumnIndex = columnIndex + offset[1];
+            const neighborRowIndex = rowIndex + offset[0]
+            const neighborColumnIndex = columnIndex + offset[1]
             if (neighborRowIndex >= 0 && neighborRowIndex < numberOfRows && neighborColumnIndex >= 0 && neighborColumnIndex < numberOfColumns){
                 if(this._bombBoard[neighborRowIndex][neighborColumnIndex] === 'B'){
                     numberOfBombs++
@@ -49,7 +49,7 @@ export class Board{
     }
     print(){
         console.log('Board')
-        console.log(this._playerBoard.map( row => row.join(' | ')).join('\n') );
+        console.log(this._playerBoard.map( row => row.join(' | ')).join('\n') )
     }
     static generatePlayerBoard(numberOfRows, numberOfColumns){
         let board = []
@@ -63,7 +63,7 @@ export class Board{
         return board
     }
     static generateBombBoard(numberOfRows, numberOfColumns, numberOfBombs){ 
-        let  board = []
+        const  board = []
         let numberOfBombsPlaced = 0
         for (let rowIndex = 0; rowIndex < numberOfRows; rowIndex++){
             let row = []
@@ -83,5 +83,3 @@ export class Board{
         return board;
     }
 }
-
-export {Board};
