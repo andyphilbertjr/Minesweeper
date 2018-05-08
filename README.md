@@ -7,4 +7,4 @@
 // let game = new Game(3, 3, 3);
 // game.playMove(0, 1);
 // game.playMove(1, 2);
-// When done run `.exit`
+
